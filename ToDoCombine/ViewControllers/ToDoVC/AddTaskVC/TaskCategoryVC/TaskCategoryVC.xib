@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TaskCategoryVC" customModule="ToDoCombine" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mce-uc-PYU">
+                    <rect key="frame" x="40" y="124" width="334" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Важное"/>
+                    <connections>
+                        <action selector="importantCategoryBtn:" destination="-1" eventType="touchUpInside" id="ZgE-1K-yJu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixV-gO-yH7">
+                    <rect key="frame" x="40" y="180" width="334" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Покупки"/>
+                    <connections>
+                        <action selector="purchasestCategoryBtn:" destination="-1" eventType="touchUpInside" id="2Wp-ca-tuG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NnN-wV-tbg">
+                    <rect key="frame" x="40" y="292" width="334" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Здоровье"/>
+                    <connections>
+                        <action selector="healthtCategoryBtn:" destination="-1" eventType="touchUpInside" id="rLG-N6-e2Q"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7c-zn-hEh">
+                    <rect key="frame" x="40" y="236" width="334" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Активности"/>
+                    <connections>
+                        <action selector="activityCategoryBtn:" destination="-1" eventType="touchUpInside" id="dLG-lz-v6d"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGb-GU-AKI">
+                    <rect key="frame" x="40" y="348" width="334" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="31" id="LvG-46-DKF"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Изучение"/>
+                    <connections>
+                        <action selector="learningCategoryBtn:" destination="-1" eventType="touchUpInside" id="fxO-2T-qhI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ixV-gO-yH7" firstAttribute="top" secondItem="mce-uc-PYU" secondAttribute="bottom" constant="25" id="5KJ-38-2Ui"/>
+                <constraint firstItem="K7c-zn-hEh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="6Ln-nZ-9jc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="K7c-zn-hEh" secondAttribute="trailing" constant="40" id="9sR-Bd-9AK"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="mce-uc-PYU" secondAttribute="trailing" constant="40" id="Agr-aA-xbW"/>
+                <constraint firstItem="K7c-zn-hEh" firstAttribute="top" secondItem="ixV-gO-yH7" secondAttribute="bottom" constant="25" id="Bng-0Y-BzW"/>
+                <constraint firstItem="mce-uc-PYU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="KNR-7E-kO4"/>
+                <constraint firstItem="mce-uc-PYU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="O7D-gJ-ayf"/>
+                <constraint firstItem="aGb-GU-AKI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="PfX-rV-YnL"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aGb-GU-AKI" secondAttribute="trailing" constant="40" id="Rpd-Cv-qLj"/>
+                <constraint firstItem="aGb-GU-AKI" firstAttribute="top" secondItem="NnN-wV-tbg" secondAttribute="bottom" constant="25" id="VFi-Ha-txe"/>
+                <constraint firstItem="NnN-wV-tbg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="eCn-vu-4TJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="NnN-wV-tbg" secondAttribute="trailing" constant="40" id="kDF-OW-G5w"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ixV-gO-yH7" secondAttribute="trailing" constant="40" id="kzZ-BS-pja"/>
+                <constraint firstItem="NnN-wV-tbg" firstAttribute="top" secondItem="K7c-zn-hEh" secondAttribute="bottom" constant="25" id="pJo-HL-QJh"/>
+                <constraint firstItem="ixV-gO-yH7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="tuH-Qf-aHA"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="115"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

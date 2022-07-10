@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToDoVC" customModule="ToDoCombine" customModuleProvider="target">
+            <connections>
+                <outlet property="calendarView" destination="8kU-BO-y5b" id="H9N-g4-MZe"/>
+                <outlet property="helloTitle" destination="Cc7-2r-EHX" id="juw-Y2-fC7"/>
+                <outlet property="tableView" destination="Bj9-0q-CZO" id="IXK-9A-gfJ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-0q-CZO">
+                    <rect key="frame" x="0.0" y="64" width="414" height="450"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="450" id="WpE-jg-ncD"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8kU-BO-y5b" customClass="FSCalendar">
+                    <rect key="frame" x="0.0" y="514" width="414" height="348"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cc7-2r-EHX">
+                    <rect key="frame" x="16" y="47" width="382" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8kU-BO-y5b" secondAttribute="trailing" id="82b-sP-hV4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="8kU-BO-y5b" secondAttribute="bottom" id="I4f-Yv-lIb"/>
+                <constraint firstItem="8kU-BO-y5b" firstAttribute="top" secondItem="Bj9-0q-CZO" secondAttribute="bottom" id="LaP-71-etC"/>
+                <constraint firstItem="Bj9-0q-CZO" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OOJ-hz-GUf"/>
+                <constraint firstItem="8kU-BO-y5b" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="S6W-Rv-MmE"/>
+                <constraint firstItem="Cc7-2r-EHX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="3" id="cGc-2W-n1g"/>
+                <constraint firstItem="Bj9-0q-CZO" firstAttribute="top" secondItem="Cc7-2r-EHX" secondAttribute="bottom" id="dFs-tn-hms"/>
+                <constraint firstItem="Bj9-0q-CZO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kHE-aL-Ceg"/>
+                <constraint firstItem="Cc7-2r-EHX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="weP-AG-heH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cc7-2r-EHX" secondAttribute="trailing" constant="16" id="y2g-iy-rzl"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

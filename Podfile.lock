@@ -1,0 +1,69 @@
+PODS:
+  - Alamofire (5.5.0)
+  - FLUtilities (0.1.0)
+  - FSCalendar (2.8.4)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya-ObjectMapper (2.9):
+    - Moya-ObjectMapper/Core (= 2.9)
+  - Moya-ObjectMapper/Core (2.9):
+    - Moya (~> 14.0.0-beta.6)
+    - ObjectMapper
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - ObjectMapper (4.2.0)
+  - Realm (10.25.0):
+    - Realm/Headers (= 10.25.0)
+  - Realm/Headers (10.25.0)
+  - RealmSwift (10.25.0):
+    - Realm (= 10.25.0)
+  - SDWebImage (5.12.6):
+    - SDWebImage/Core (= 5.12.6)
+  - SDWebImage/Core (5.12.6)
+  - SwiftyJSON (4.3.0)
+
+DEPENDENCIES:
+  - FLUtilities (from `https://github.com/Nickelfox/FLUtilities.git`)
+  - FSCalendar
+  - Moya
+  - Moya-ObjectMapper
+  - RealmSwift
+  - SDWebImage (~> 5.0)
+  - SwiftyJSON (~> 4.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - Moya
+    - Moya-ObjectMapper
+    - ObjectMapper
+    - Realm
+    - RealmSwift
+    - SDWebImage
+    - SwiftyJSON
+
+EXTERNAL SOURCES:
+  FLUtilities:
+    :git: https://github.com/Nickelfox/FLUtilities.git
+
+CHECKOUT OPTIONS:
+  FLUtilities:
+    :commit: d966feb4ebe332e9ecb4a005c7db848d9df89dc2
+    :git: https://github.com/Nickelfox/FLUtilities.git
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  FLUtilities: 1b101734a35e894fd019e3fe6b430214c8fa3186
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  Moya-ObjectMapper: 967a99d9ea3aa9c93ddbe112aeca3667f53bfe93
+  ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  Realm: 22a82aaa0e73f3483e3a6df32549c4c5cd34aa63
+  RealmSwift: c2a635212400923edd3f828b8a37d55d3eb31863
+  SDWebImage: a47aea9e3d8816015db4e523daff50cfd294499d
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+
+PODFILE CHECKSUM: 102762b6bb64ff4fda336d87f2b1e8fed9bfebca
+
+COCOAPODS: 1.11.3
